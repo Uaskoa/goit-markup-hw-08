@@ -1,0 +1,111 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+
+  margin: 0 auto;
+
+  &-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  &-mail,
+  &-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  }
+
+  &-contacts {
+    margin-right: 73px;
+    width: 228px;
+
+    
+  }
+
+  &-social {
+    margin-right: 93px;
+  }
+ 
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-contacts-all:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+   
+
+}
+
+
+.footer-form {
+  display: flex;
+
+  &-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+
+    &::placeholder {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+}
+
+
+
+.logo-light {
+  display: block;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+.action {
+  display: block;
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+

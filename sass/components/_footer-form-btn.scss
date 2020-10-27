@@ -1,0 +1,14 @@
+.footer-form-btn {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &-svg  {
+      fill: #ffffff;
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+    }
+   
+  }
