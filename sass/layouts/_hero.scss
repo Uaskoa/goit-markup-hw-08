@@ -1,25 +1,123 @@
+
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-bg.jpg");
-  max-width: 1600px;
+       rgba(47, 48, 58, 0.4)
+      ), url("../images/hero/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 118px 60px;
+  margin: 0 auto;
+  text-align: center;
+  // max-width: 480px;
 
   &-title {
-    font-weight: 900;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        max-width: 360px;
+    
+        margin: 0 auto 30px;
+     }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)
+      ), url("../images/hero/bg-mobile@2x.jpg");
+  }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+        ), url("../images/hero/bg-tablet.jpg");
+      padding: 118px 204px;
+      // max-width: 768px;
+  }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)
+      ), url("../images/hero/bg-tablet@2x.jpg");
+  }
+  }
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+        ), url("../images/hero/bg-desktop.jpg");
+      padding: 200px 452px;
+      
+    
+    &-title {
     font-size: 44px;
     line-height: 1.367;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 696px;
+    max-width: 696px;
+   
+    }
 
-    margin: 0 auto 30px;
   }
+
+
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+.hero {
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/bg-desktop@2x.jpg");
+}
+}
+
+
+// .hero {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   margin: 0 auto;
+//   text-align: center;
+//   background-color: #c4c4c4;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url("../images/hero-bg.jpg");
+//   max-width: 1600px;
+
+//   &-title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.367;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//     width: 696px;
+
+//     margin: 0 auto 30px;
+//   }
+// }
+
+
+  
