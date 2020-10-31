@@ -1,4 +1,6 @@
 .hero-btn {
-@extend %button;
-display: inline-block;
-}
+    @extend %button;
+    display: block;
+    margin: 0 auto;
+    
+    }
