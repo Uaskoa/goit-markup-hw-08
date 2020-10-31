@@ -83,12 +83,8 @@ img {
 
 .social-list {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+  padding-left: 122 px;
+  padding-right: 122 px;
 }
 
 .social-list-link {
@@ -103,23 +99,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
-}
-
-.social-list-link:hover, .social-list-link:focus, .social-list-link:active {
-  background-color: #2196f3;
-}
-
-.footer .social-list-link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer .social-list-link:hover, .footer .social-list-link:focus, .footer .social-list-link:active {
-  background-color: #2196f3;
-}
-
-.footer .social-list {
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 .social-link-svg {

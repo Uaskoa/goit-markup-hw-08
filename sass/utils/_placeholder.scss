@@ -25,6 +25,17 @@
     margin-bottom: 50px;
   }
 
+  %title-mob-tab {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-title-color;
+
+    margin-bottom: 30px;
+  }
+
 %subtitle {
     font-family: $main-font;
     font-weight: 700;
