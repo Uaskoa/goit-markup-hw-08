@@ -75,6 +75,18 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .hero-btn {
   display: inline-block;
 }
@@ -621,6 +633,40 @@ img {
 
 .advantages-list-item:last-child .advantages-subtitle::before {
   background-image: url("../images/svg/astronaut.svg");
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages-list-item {
+    width: 354px;
+  }
+  .advantages-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .advantages-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .advantages-subtitle::before {
+    content: "";
+    width: 270px;
+  }
+  .advantages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages-list-item {
+    width: 270px;
+  }
 }
 
 .skills {
