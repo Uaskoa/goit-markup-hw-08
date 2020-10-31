@@ -533,7 +533,7 @@ img {
   padding: 118px 0;
   margin: 0 auto;
   text-align: center;
-  width: 480px;
+  max-width: 480px;
 }
 
 .hero-title {
@@ -560,7 +560,7 @@ img {
     background-size: 768px 400px;
     margin: 0 auto;
     text-align: center;
-    width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -573,11 +573,12 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop.jpg");
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-size: 1600px 600px;
     margin: 0 auto;
-    text-align: center;
-    width: 1600px;
+    height: 600px;
+    max-width: 1600px;
   }
   .hero-title {
     font-size: 44px;
