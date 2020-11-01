@@ -319,13 +319,18 @@ img {
 
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
   flex-basis: 74px;
 }
 
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-btn-item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 15px;
 }
 
 .portfolio {

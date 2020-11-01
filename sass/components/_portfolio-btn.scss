@@ -30,13 +30,18 @@
 
     &-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
     flex-basis: 74px;
     }
 
     &-item:not(:last-child) {
         margin-right: 8px;
+      }
+
+     &-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 15px;
       }
 
 
