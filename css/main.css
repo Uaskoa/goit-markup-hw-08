@@ -575,6 +575,14 @@ img {
   .menu-button.is-open .icon-menu-mob {
     display: none;
   }
+  .menu-button:hover .icon-close-mob,
+  .menu-button:focus .icon-close-mob,
+  .menu-button:active .icon-close-mob,
+  .menu-button:hover .icon-menu-mob,
+  .menu-button:focus .icon-menu-mob,
+  .menu-button:active .icon-menu-mob {
+    fill: #2196f3;
+  }
   .menu-container {
     display: none;
     position: absolute;
@@ -623,18 +631,12 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
   }
-  .icon-close-mob:hover, .icon-close-mob:focus, .icon-close-mob:active {
-    fill: #2196f3;
-  }
   .icon-menu-mob {
     fill: #757575;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
-  }
-  .icon-menu-mob:hover, .icon-menu-mob:focus, .icon-menu-mob:active {
-    fill: #2196f3;
   }
 }
 

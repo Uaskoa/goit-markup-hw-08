@@ -111,6 +111,17 @@
     display: none;
   }
 
+  &:hover .icon-close-mob,
+  &:focus .icon-close-mob,
+  &:active .icon-close-mob,
+  &:hover .icon-menu-mob,
+  &:focus .icon-menu-mob,
+  &:active .icon-menu-mob
+   {
+     fill: $accent-color;
+
+  }
+
 }
 
 .menu-container {
@@ -183,22 +194,14 @@
   fill: $main-descriprion-color;
    @include transition ($tp: fill);
 
-  &:hover,
-  &:focus,
-  &:active  {
-    fill: $accent-color;
-  }
+ 
 }
 
 .icon-menu-mob  {
   fill: $main-descriprion-color;
    @include transition ($tp: fill);
 
-  &:hover,
-  &:focus,
-  &:active  {
-    fill: $accent-color;
-  }
+ 
 }
 }
 
