@@ -2,8 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
-  // max-width: 480px;
-
+  
   margin: 0 auto;
 
 
@@ -91,7 +90,7 @@
 }
 
 
-@media screen and (min-width:320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer {
     &-contacts {
     margin-bottom: 60px;
@@ -107,15 +106,6 @@
   }
 
 }
-
-
-// @media screen and (min-width: 768px) {
-// .footer {
- 
-
-
-// }
-// }
 
 
 
