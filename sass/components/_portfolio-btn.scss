@@ -47,3 +47,14 @@
 
   }
   
+
+  @media screen and (min-width:768px) {
+.portfolio-btn {
+    &-list {
+    justify-content: center;
+    margin-bottom: 30px;
+    }
+
+}
+
+  }

@@ -108,6 +108,41 @@
 }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+     &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)  {
+
+  .portfolio {
+     &-list-item:not(:nth-last-child(-n+2)) {
+      margin-bottom: 30px;
+    }
+
+     &-list-item:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &-img-bottom {
+      width: 354px;
+    }
+    
+  }
+
+  .overlay-description {
+  padding: 49px 24px;
+
+}
+}
+
+
+
 // .portfolio {
 //   padding-top: 94px;
 //   padding-bottom: 94px;
