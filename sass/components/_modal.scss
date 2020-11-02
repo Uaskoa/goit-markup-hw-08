@@ -6,6 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   @include transition ();
+  overflow-y: scroll ;
 
   &.is-hidden {
     opacity: 0;
@@ -15,13 +16,16 @@
   }
 }
 
+
+
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   padding: 40px;
   @include transition ($tdel:500ms);
@@ -40,7 +44,7 @@
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-title-color;
@@ -64,22 +68,22 @@
     resize: none;
     @include transition ();
     margin-bottom: 20px;
-    padding-top: 12px;
+    padding-top: 14px;
     padding-left: 16px;
 
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
+    font-size: 14px;
+    line-height: 1.143;
     letter-spacing: 0.01em;
 
     &::placeholder {
       font-family: $main-font;
       font-style: normal;
       font-weight: 400;
-      font-size: 12px;
-      line-height: 1.167;
+      font-size: 14px;
+      line-height: 1.143;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
     }
@@ -162,8 +166,8 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 
@@ -173,8 +177,8 @@
       font-family: $main-font;
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.714;
+      font-size: 12px;
+      line-height: 1.167;
       letter-spacing: 0.03em;
       text-decoration-line: underline;
 
@@ -231,4 +235,49 @@
       fill: $accent-color;
     }
   }
+}
+
+@media screen and (min-width:1200px) {
+  .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  width: 528px;
+  height: 581px;
+
+  &-title {
+    line-height: 1.15;
+
+ }
+ }
+ .modal-form {
+   font-size: 12px;
+
+  &::placeholder {
+      font-size: 12px;
+      line-height: 1.167;
+      
+    }
+    }
+
+
+
+  .modal-form-policy {
+ 
+  &-label {
+    font-size: 14px;
+    line-height: 1.714;
+
+    
+      & a {
+       font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      text-decoration-line: underline;
+      color: $accent-color;
+    }
+
+  }
+}
 }
