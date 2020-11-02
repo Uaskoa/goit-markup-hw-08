@@ -897,7 +897,6 @@ img {
   }
   .advantages-subtitle::before {
     content: "";
-    width: 270px;
   }
   .advantages-list {
     display: flex;
