@@ -141,7 +141,30 @@
 }
 }
 
+@media screen and (min-width: 1200px) {
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 
+    &-list-item:not(:nth-last-child(-n+3)) {
+      margin-bottom: 30px;
+    }
+
+     &-list-item:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &-img-bottom {
+      width: 370px;
+    }
+
+}
+
+  .overlay-description {
+  padding: 63px 24px;
+
+}
+}
 
 // .portfolio {
 //   padding-top: 94px;
