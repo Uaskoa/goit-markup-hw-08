@@ -1,55 +1,29 @@
 /* =======HEADER====== */
 
 .header {
+  position: relative;
   padding: 25px 0;
   border-bottom: 1px solid #ececec;
-
-  &-contacts {
-    color: $main-descriprion-color;
-    display: flex;
-    align-items: center;
-  }
-
-  & .address {
-    margin-left: auto;
-  }
+  
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
 
-  & .list {
-    display: flex;
-  }
-
-  &-item {
-    position: relative;
-
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-}
-
-.address .list {
-  display: flex;
-}
 
 .logo-dark {
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #000000;
   display: block;
-  margin-right: 94px;
+  
 }
 
 .logo-part {
   color: $accent-color;
 }
+
 
 .list-item {
   font-weight: 500;
@@ -65,13 +39,23 @@
   &:focus {
     color: $accent-color;
   }
+
+.address-item & {
+    color: $main-descriprion-color;
+  
+    &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+  }
+
 }
 
-.address-item:not(:last-child) {
-  margin-right: 50px;
+
 }
 
 .current {
+  position: relative;
   color: $accent-color;
 }
 
@@ -80,8 +64,8 @@
   display: block;
   position: absolute;
   bottom: 0;
-  right: 0;
-  transform: translate(0, 800%);
+  right: 50%;
+  transform: translate(50%, 200%);
 
   width: 100%;
   height: 4px;
@@ -101,3 +85,341 @@
     fill: $accent-color;
   }
 }
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+  .header {
+    padding: 16px 0;
+  }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close-mob {
+    display: none;
+  }
+
+  &.is-open .icon-close-mob {
+    display: block;
+  }
+  &.is-open .icon-menu-mob {
+    display: none;
+  }
+
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  height: 393px;
+  background-color: #ffffff;
+
+  &.is-open {
+    display: block;
+    z-index: 10;
+  }
+}
+
+
+  .logo-menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-container {
+    padding: 60px 0;
+  }
+
+
+  .navigation-item,
+  .address-item {
+    text-align: center;
+  }
+  
+  .navigation{
+
+    &-item {
+      
+      display: block;
+
+
+      &:not(:last-child) {
+      margin-bottom: 40px ;
+      }
+      
+    }
+
+  & .list {
+    margin-bottom: 60px;
+    }
+  }
+
+  .address-item {
+    &:not(:last-child){
+    margin-bottom: 16px;
+    }
+  }
+  
+
+
+  .list-item {
+  
+  font-size: 18px;
+  line-height: 1.167;
+}
+
+.icon-close-mob  {
+  fill: $main-descriprion-color;
+   @include transition ($tp: fill);
+
+  &:hover,
+  &:focus,
+  &:active  {
+    fill: $accent-color;
+  }
+}
+
+.icon-menu-mob  {
+  fill: $main-descriprion-color;
+   @include transition ($tp: fill);
+
+  &:hover,
+  &:focus,
+  &:active  {
+    fill: $accent-color;
+  }
+}
+}
+
+
+@media screen and (min-width:768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .header {
+
+    & .container {
+      display: flex;
+      align-items: center;
+    }
+  &-contacts {
+    color: $main-descriprion-color;
+    display: flex;
+    align-items: center;
+  }
+
+  & .address {
+    margin-left: auto;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 82px;
+
+  & .list {
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.address .list {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .address-item .header-contacts {
+   font-size: 12px;
+ line-height: 1.167; 
+  }
+  
+
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-menu-wrapper {
+  margin-right: 88px;
+}
+
+ .address-item {
+    &:not(:last-child){
+    margin-bottom: 10px;
+    }
+  }
+  
+
+  .current::after {
+  content: "";
+   transform: translate(50%, 900%);
+
+}
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .logo-dark {
+    font-size: 26px; 
+  letter-spacing: 0.03em;}
+  
+.logo-menu-wrapper {
+  margin-right: 94px;
+}
+
+  .navigation {
+    margin-right: 305px;
+  }
+  
+
+  .address-item {
+  
+  
+  &:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+
+& .header-contacts {
+  font-size: 14px;
+  line-height: 1.143;
+
+}
+
+}
+
+  .current::after {
+  content: "";
+  transform: translate(50%, 800%);
+
+  
+ 
+}
+
+}
+  
+
+
+// .header {
+//   padding: 25px 0;
+//   border-bottom: 1px solid #ececec;
+
+//   &-contacts {
+//     color: $main-descriprion-color;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   & .address {
+//     margin-left: auto;
+//   }
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+
+//   & .list {
+//     display: flex;
+//   }
+
+//   &-item {
+//     position: relative;
+
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+// }
+
+// .address .list {
+//   display: flex;
+// }
+
+// .logo-dark {
+//   font-family: $secondary-font;
+//   font-weight: 700;
+//   font-size: 26px; - for 1200px
+//   line-height: 1.192;
+//   letter-spacing: 0.03em;
+//   color: #000000;
+//   display: block;
+//   margin-right: 94px;
+// }
+
+// .logo-part {
+//   color: $accent-color;
+// }
+
+// .list-item {
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.02em;
+//   color: $main-title-color;
+//   font-style: normal;
+//   @include transition ($tp: color);
+
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+
+// .address-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .current {
+//   color: $accent-color;
+// }
+
+// .current::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   transform: translate(0, 800%);
+
+//   width: 100%;
+//   height: 4px;
+
+//   background: $accent-color;
+//   border-radius: 2px;
+// }
+
+// .address-header-svg {
+//   fill: $main-descriprion-color;
+//   margin-right: 10px;
+//   @include transition ($tp: fill);
+
+//   .header-contacts:hover &,
+//   .header-contacts:focus &,
+//   .header-contacts:active & {
+//     fill: $accent-color;
+//   }
+// }
