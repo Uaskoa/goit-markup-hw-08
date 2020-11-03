@@ -389,9 +389,6 @@ img {
   .modal-form-policy-label a {
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: #2196f3;
   }
 }
 
@@ -872,9 +869,6 @@ img {
   .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .advantages-subtitle::before {
-    content: "";
   }
   .advantages-list {
     display: flex;

@@ -59,6 +59,7 @@
 }
 
 
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
   .advantages-list {
@@ -66,10 +67,10 @@
     flex-wrap: wrap;
 
     &-item {
- width: 354px;
+    width: 354px;
 }
-&-item:not(:nth-child(2n)) {
-  margin-right: 30px;
+    &-item:not(:nth-child(2n)) {
+    margin-right: 30px;
    }
   
     &-item:nth-last-child(-n + 2) {
@@ -81,23 +82,11 @@
 }
 
 
-
-
   @media screen and (min-width: 1200px) {
-    .advantages {
+  .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  &-subtitle {
-   
-    &::before {
-      content: "";
-      
-           
-    }
-  }
-
-  
+ 
 }
 
 .advantages-list {
@@ -105,8 +94,7 @@
   justify-content: space-between;
 
   &-item {
-    width: 270px;
-
+  width: 270px;
     
   }
 }
