@@ -113,6 +113,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: all;
   transition-duration: 250ms;
@@ -132,14 +133,11 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
-  width: 450px;
-  height: 609px;
-  background-color: #ffffff;
   padding: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  transform: scale(1) rotate(360deg);
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +145,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  transform: scale(0);
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -310,7 +308,7 @@ img {
 .modal-form-policy-label::before {
   display: inline-block;
   content: "";
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -355,12 +353,22 @@ img {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    width: 450px;
+    height: 609px;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
     width: 528px;
     height: 581px;
   }
@@ -1036,27 +1044,17 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
-@media screen and (max-width: 767px) {
-  .clients-list {
-    margin: -15px;
-  }
-  .clients-list-item {
-    margin: 15px;
-    width: calc((100% - 4 * 15px) / 2);
-  }
+.clients-list-item {
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
 }
 
 @media screen and (min-width: 768px) {
-  .clients-link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients li:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
+  .clients-list-item {
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -1070,8 +1068,8 @@ img {
     line-height: 1.167;
     margin-bottom: 50px;
   }
-  .clients-link {
-    width: 170px;
+  .clients-list-item {
+    width: calc((100% - 12 * 15px) / 6);
   }
 }
 
