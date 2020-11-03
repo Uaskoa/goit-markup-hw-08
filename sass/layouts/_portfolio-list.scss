@@ -38,7 +38,7 @@
     
   &-img-bottom {
     display: block;
-    padding: 20px 24px;
+    padding: 20px 4px 20px 24px;
     margin-top: 0;
     background: #ffffff;
     border-left: 1px solid #eeeeee;
@@ -93,6 +93,7 @@
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding: 20px 20px;
 
   
 }
@@ -107,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px)  {
   .portfolio {
    
 
@@ -129,6 +130,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  &-img-bottom {
+      width: 354px;
+    }
+    
 }
 
 }
@@ -144,9 +150,6 @@
       margin-right: 30px;
     }
 
-    &-img-bottom {
-      width: 354px;
-    }
     
   }
 

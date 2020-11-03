@@ -989,7 +989,7 @@ img {
     padding-bottom: 94px;
   }
   .team-list {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
   .team-title {
